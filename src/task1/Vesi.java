@@ -1,9 +1,9 @@
-package factorymethod;
+package task1;
 
 public class Vesi implements Juoma{
 
     public String toString(){
-        return "vesi";
+        return "kostea vesi kolera-altaasta";
     }
 
 }

@@ -1,4 +1,5 @@
-package factorymethod;
+package task1;
 
 public interface Juoma {
+
 }

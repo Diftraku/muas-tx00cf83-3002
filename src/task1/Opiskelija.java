@@ -1,6 +1,6 @@
 package task1;
 
-public class Oppilas extends AterioivaOtus {
+public class Opiskelija extends AterioivaOtus {
 
     public Juoma createJuoma(){
         return new Gambviina();
