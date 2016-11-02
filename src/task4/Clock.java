@@ -21,7 +21,6 @@ public class Clock {
         while(true) {
             input.nextLine();
             timer.run();
-
         }
     }
 }

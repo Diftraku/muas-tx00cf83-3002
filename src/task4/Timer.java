@@ -1,6 +1,5 @@
 package task4;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Observable;
 
@@ -13,16 +12,15 @@ import java.util.Observable;
  * @license https://opensource.org/licenses/MIT The MIT License (MIT)
  */
 
-public class Timer extends Observable {
+class Timer extends Observable {
     private LocalDateTime time;
 
-    public Timer() {
+    Timer() {
         this.time = LocalDateTime.now();
     }
 
-    public void run() {
-        this.time = time.now();
+    void run() {
         setChanged();
-        notifyObservers(time);
+        notifyObservers(time.now());
     }
 }
