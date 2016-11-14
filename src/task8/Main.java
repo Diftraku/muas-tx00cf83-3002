@@ -13,7 +13,7 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-        KSP game = new KSP();
+        Game game = new KSP();
         Random rand = new Random();
         // Randomize amount of  players
         int playersCount = rand.nextInt(3) + 2;

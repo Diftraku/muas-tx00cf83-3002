@@ -43,7 +43,7 @@ public class KSP extends Game {
         System.out.println("A winnar is joo!");
         int i = 0;
         for (String play : plays) {
-            System.out.printf("%d: %s\n", i, play);
+            System.out.printf("Player %d: %s\n", (i+1), play);
             i += 1;
         }
     }
