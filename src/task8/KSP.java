@@ -31,11 +31,7 @@ public class KSP extends Game {
 
     @Override
     boolean endOfGame() {
-        if (playCount == playersCount) {
-            return true;
-        } else {
-            return false;
-        }
+        return playCount == playersCount;
     }
 
     @Override
