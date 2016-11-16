@@ -24,7 +24,7 @@ public class Riddler {
         return Riddler.instance;
     }
 
-    public static synchronized int getRandomInt() {
+    public static int getRandomInt() {
         return Riddler.RANDOM_UPPER_BOUND+2;
     }
 
