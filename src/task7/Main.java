@@ -14,6 +14,7 @@ import java.util.Random;
  * @license https://opensource.org/licenses/MIT The MIT License (MIT)
  */
 
+@SuppressWarnings("Duplicates")
 public class Main {
     static BufferedReader stdin = new BufferedReader(new InputStreamReader(System.in));
 

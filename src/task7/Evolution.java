@@ -13,7 +13,8 @@ import java.util.List;
 
 abstract public class Evolution implements EvolutionIF {
     protected List<Move> moveList;
-
+    protected int evolvesAt;
+    protected EvolutionIF nextStage;
 
     @Override
     public List<Move> getMoveList(Pokemon p) {
@@ -40,7 +41,18 @@ abstract public class Evolution implements EvolutionIF {
         return this.moveList.get(3);
     }
 
+    public int getEvolvesAt() {
+        return evolvesAt;
+    }
+
     protected void setEvolution(Pokemon p, Evolution e) {
         p.setEvolution(e);
+    }
+
+    @Override
+    public void evolve(Pokemon p) {
+        if (p.getLevel() >= evolvesAt && !(nextStage == null)) {
+            p.setEvolution(nextStage);
+        }
     }
 }
